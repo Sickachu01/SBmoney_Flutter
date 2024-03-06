@@ -71,18 +71,23 @@ class TransactionList extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    // Hhh (5:370)
-                    margin: EdgeInsets.fromLTRB(
-                        26 * fem, 0 * fem, 0 * fem, 15 * fem),
-                    child: Text(
-                      'เงินเดือน',
-                      style: TextStyle(
-                        fontSize: 20 * ffem,
-                        fontWeight: FontWeight.w600,
-                        height: 1.2125 * ffem / fem,
-                        color: Color(0xff000000),
-                        decoration: TextDecoration.none,
+                  GestureDetector(
+                    onTap: () {
+                      _navigateToTransactionPage(context);
+                    },
+                    child: Container(
+                      // Hhh (5:370)
+                      margin: EdgeInsets.fromLTRB(
+                          26 * fem, 0 * fem, 0 * fem, 15 * fem),
+                      child: Text(
+                        'เงินเดือน',
+                        style: TextStyle(
+                          fontSize: 20 * ffem,
+                          fontWeight: FontWeight.w600,
+                          height: 1.2125 * ffem / fem,
+                          color: Color(0xff000000),
+                          decoration: TextDecoration.none,
+                        ),
                       ),
                     ),
                   ),
@@ -96,18 +101,23 @@ class TransactionList extends StatelessWidget {
                       color: Color(0xff000000),
                     ),
                   ),
-                  Container(
-                    // Jsh (5:371)
-                    margin: EdgeInsets.fromLTRB(
-                        26 * fem, 0 * fem, 0 * fem, 0 * fem),
-                    child: Text(
-                      'รายได้อื่นๆ',
-                      style: TextStyle(
-                        fontSize: 20 * ffem,
-                        fontWeight: FontWeight.w600,
-                        height: 1.2125 * ffem / fem,
-                        color: Color(0xff000000),
-                        decoration: TextDecoration.none,
+                  GestureDetector(
+                    onTap: () {
+                      _navigateToTransactionPage(context);
+                    },
+                    child: Container(
+                      // Jsh (5:371)
+                      margin: EdgeInsets.fromLTRB(
+                          26 * fem, 0 * fem, 0 * fem, 0 * fem),
+                      child: Text(
+                        'รายได้อื่นๆ',
+                        style: TextStyle(
+                          fontSize: 20 * ffem,
+                          fontWeight: FontWeight.w600,
+                          height: 1.2125 * ffem / fem,
+                          color: Color(0xff000000),
+                          decoration: TextDecoration.none,
+                        ),
                       ),
                     ),
                   ),
@@ -179,14 +189,19 @@ class TransactionList extends StatelessWidget {
                       child: SizedBox(
                         width: 233 * fem,
                         height: 25 * fem,
-                        child: Text(
-                          'อาหาร & เครื่องดื่ม',
-                          style: TextStyle(
-                            fontSize: 20 * ffem,
-                            fontWeight: FontWeight.w600,
-                            height: 1.2125 * ffem / fem,
-                            color: Color(0xff000000),
-                            decoration: TextDecoration.none,
+                        child: GestureDetector(
+                          onTap: () {
+                            _navigateToTransactionPage(context);
+                          },
+                          child: Text(
+                            'อาหาร & เครื่องดื่ม',
+                            style: TextStyle(
+                              fontSize: 20 * ffem,
+                              fontWeight: FontWeight.w600,
+                              height: 1.2125 * ffem / fem,
+                              color: Color(0xff000000),
+                              decoration: TextDecoration.none,
+                            ),
                           ),
                         ),
                       ),
@@ -200,14 +215,19 @@ class TransactionList extends StatelessWidget {
                       child: SizedBox(
                         width: 85 * fem,
                         height: 25 * fem,
-                        child: Text(
-                          'ค่าน้ำ',
-                          style: TextStyle(
-                            fontSize: 20 * ffem,
-                            fontWeight: FontWeight.w600,
-                            height: 1.2125 * ffem / fem,
-                            color: Color(0xff000000),
-                            decoration: TextDecoration.none,
+                        child: GestureDetector(
+                          onTap: () {
+                            _navigateToTransactionPage(context);
+                          },
+                          child: Text(
+                            'ค่าน้ำ',
+                            style: TextStyle(
+                              fontSize: 20 * ffem,
+                              fontWeight: FontWeight.w600,
+                              height: 1.2125 * ffem / fem,
+                              color: Color(0xff000000),
+                              decoration: TextDecoration.none,
+                            ),
                           ),
                         ),
                       ),
@@ -221,14 +241,19 @@ class TransactionList extends StatelessWidget {
                       child: SizedBox(
                         width: 61 * fem,
                         height: 25 * fem,
-                        child: Text(
-                          'ค่าไฟ',
-                          style: TextStyle(
-                            fontSize: 20 * ffem,
-                            fontWeight: FontWeight.w600,
-                            height: 1.2125 * ffem / fem,
-                            color: Color(0xff000000),
-                            decoration: TextDecoration.none,
+                        child: GestureDetector(
+                          onTap: () {
+                            _navigateToTransactionPage(context);
+                          },
+                          child: Text(
+                            'ค่าไฟ',
+                            style: TextStyle(
+                              fontSize: 20 * ffem,
+                              fontWeight: FontWeight.w600,
+                              height: 1.2125 * ffem / fem,
+                              color: Color(0xff000000),
+                              decoration: TextDecoration.none,
+                            ),
                           ),
                         ),
                       ),
@@ -242,14 +267,19 @@ class TransactionList extends StatelessWidget {
                       child: SizedBox(
                         width: 85 * fem,
                         height: 25 * fem,
-                        child: Text(
-                          'ค่าเช่า',
-                          style: TextStyle(
-                            fontSize: 20 * ffem,
-                            fontWeight: FontWeight.w600,
-                            height: 1.2125 * ffem / fem,
-                            color: Color(0xff000000),
-                            decoration: TextDecoration.none,
+                        child: GestureDetector(
+                          onTap: () {
+                            _navigateToTransactionPage(context);
+                          },
+                          child: Text(
+                            'ค่าเช่า',
+                            style: TextStyle(
+                              fontSize: 20 * ffem,
+                              fontWeight: FontWeight.w600,
+                              height: 1.2125 * ffem / fem,
+                              color: Color(0xff000000),
+                              decoration: TextDecoration.none,
+                            ),
                           ),
                         ),
                       ),
