@@ -134,8 +134,16 @@ class _TransactionPageState extends State<TransactionPage> {
                   EdgeInsets.fromLTRB(15 * fem, 21 * fem, 15 * fem, 38 * fem),
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Color(0xffd9d9d9),
+                color: Color.fromARGB(255, 255, 255, 255),
                 borderRadius: BorderRadius.circular(20 * fem),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -181,8 +189,13 @@ class _TransactionPageState extends State<TransactionPage> {
                         16 * fem, 10 * fem, 72 * fem, 13 * fem),
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Color(0xffbababa),
+                      color: Color(0xFF336600),
                       borderRadius: BorderRadius.circular(20 * fem),
+                      border: Border.all(
+                        color: Colors
+                            .black, // You can specify the color you want for the border
+                        width: 2, // You can specify the width of the border
+                      ),
                     ),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -224,7 +237,7 @@ class _TransactionPageState extends State<TransactionPage> {
                                 fontSize: 30 * ffem,
                                 fontWeight: FontWeight.w500,
                                 height: 1.2125 * ffem / fem,
-                                color: Color(0xff000000),
+                                color: Color.fromARGB(255, 255, 255, 255),
                               ),
                             ),
                           ),

@@ -65,8 +65,21 @@ class TransactionList extends StatelessWidget {
                   EdgeInsets.fromLTRB(3 * fem, 16 * fem, 0 * fem, 19 * fem),
               width: 370 * fem,
               decoration: BoxDecoration(
-                color: Color(0xffd9d9d9),
+                color: Color.fromARGB(255, 255, 255, 255),
                 borderRadius: BorderRadius.circular(10 * fem),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                border: Border.all(
+                  color: Colors
+                      .black, // You can specify the color you want for the border
+                  width: 3, // You can specify the width of the border
+                ),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -144,8 +157,21 @@ class TransactionList extends StatelessWidget {
               width: 370 * fem,
               height: 240 * fem,
               decoration: BoxDecoration(
-                color: Color(0xffd9d9d9),
+                color: Color.fromARGB(255, 255, 255, 255),
                 borderRadius: BorderRadius.circular(10 * fem),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                border: Border.all(
+                  color: Colors
+                      .black, // You can specify the color you want for the border
+                  width: 3, // You can specify the width of the border
+                ),
               ),
               child: Stack(
                 children: [

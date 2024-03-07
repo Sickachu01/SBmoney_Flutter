@@ -19,7 +19,7 @@ class BudgetPage extends StatelessWidget {
       width: double.infinity,
       child: Container(
         // budgetgYF (5:400)
-        padding: EdgeInsets.fromLTRB(9 * fem, 14 * fem, 9 * fem, 170 * fem),
+        padding: EdgeInsets.fromLTRB(9 * fem, 14 * fem, 9 * fem, 165 * fem),
         width: double.infinity,
         decoration: BoxDecoration(
           color: Color(0xffffffff),
@@ -138,8 +138,21 @@ class BudgetPage extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(3 * fem, 17 * fem, 0 * fem, 4 * fem),
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Color(0xffd9d9d9),
+                color: Color.fromARGB(255, 255, 255, 255),
                 borderRadius: BorderRadius.circular(10 * fem),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+                border: Border.all(
+                  color: Colors
+                      .black, // You can specify the color you want for the border
+                  width: 3, // You can specify the width of the border
+                ),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -156,7 +169,7 @@ class BudgetPage extends StatelessWidget {
                           child: Container(
                             margin: EdgeInsets.only(right: 150 * fem),
                             child: Text(
-                              'Total budgets',
+                              'รายรับ',
                               style: TextStyle(
                                 fontSize: 20 * ffem,
                                 fontWeight: FontWeight.w600,
@@ -168,7 +181,7 @@ class BudgetPage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          '0',
+                          '        0',
                           style: TextStyle(
                             fontSize: 20 * ffem,
                             fontWeight: FontWeight.w600,
@@ -191,7 +204,7 @@ class BudgetPage extends StatelessWidget {
                   ),
                   Container(
                     margin: EdgeInsets.fromLTRB(
-                        20 * fem, 0 * fem, 24 * fem, 10 * fem),
+                        20 * fem, 10 * fem, 24 * fem, 10 * fem),
                     width: double.infinity,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -267,7 +280,22 @@ class BudgetPage extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10 * fem),
-                            color: Color(0xffd9d9d9),
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset:
+                                    Offset(0, 3), // changes position of shadow
+                              ),
+                            ],
+                            border: Border.all(
+                              color: Colors
+                                  .black, // You can specify the color you want for the border
+                              width:
+                                  3, // You can specify the width of the border
+                            ),
                           ),
                         ),
                       ),

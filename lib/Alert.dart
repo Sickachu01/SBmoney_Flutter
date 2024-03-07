@@ -67,23 +67,6 @@ class AlertPage extends StatelessWidget {
                   child: Stack(
                     children: [
                       Positioned(
-                        // rectangle10EBZ (12:6)
-                        left: 0 * fem,
-                        top: 0 * fem,
-                        child: Align(
-                          child: SizedBox(
-                            width: 370 * fem,
-                            height: 84 * fem,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10 * fem),
-                                color: Color(0xffd9d9d9),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
                         // rectangle11Wwh (12:33)
                         left: 0 * fem,
                         top: 0 * fem,
@@ -94,7 +77,22 @@ class AlertPage extends StatelessWidget {
                             child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10 * fem),
-                                color: Color(0xffd9d9d9),
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(1),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset: Offset(
+                                        0, 3), // changes position of shadow
+                                  ),
+                                ],
+                                border: Border.all(
+                                  color: Colors
+                                      .black, // You can specify the color you want for the border
+                                  width:
+                                      3, // You can specify the width of the border
+                                ),
                               ),
                             ),
                           ),
@@ -135,7 +133,7 @@ class AlertPage extends StatelessWidget {
                                 fontSize: 20 * ffem,
                                 fontWeight: FontWeight.w600,
                                 height: 1.2125 * ffem / fem,
-                                color: Color(0xff000000),
+                                color: Color.fromARGB(255, 147, 146, 146),
                                 decoration: TextDecoration.none,
                               ),
                             ),
@@ -180,7 +178,22 @@ class AlertPage extends StatelessWidget {
                             child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10 * fem),
-                                color: Color(0xffd9d9d9),
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset: Offset(
+                                        0, 3), // changes position of shadow
+                                  ),
+                                ],
+                                border: Border.all(
+                                  color: Colors
+                                      .black, // You can specify the color you want for the border
+                                  width:
+                                      3, // You can specify the width of the border
+                                ),
                               ),
                             ),
                           ),
@@ -221,7 +234,7 @@ class AlertPage extends StatelessWidget {
                                 fontSize: 20 * ffem,
                                 fontWeight: FontWeight.w600,
                                 height: 1.2125 * ffem / fem,
-                                color: Color(0xff000000),
+                                color: Color.fromARGB(255, 147, 146, 146),
                                 decoration: TextDecoration.none,
                               ),
                             ),
@@ -266,7 +279,22 @@ class AlertPage extends StatelessWidget {
                             child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10 * fem),
-                                color: Color(0xffd9d9d9),
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset: Offset(
+                                        0, 3), // changes position of shadow
+                                  ),
+                                ],
+                                border: Border.all(
+                                  color: Colors
+                                      .black, // You can specify the color you want for the border
+                                  width:
+                                      3, // You can specify the width of the border
+                                ),
                               ),
                             ),
                           ),
@@ -307,7 +335,7 @@ class AlertPage extends StatelessWidget {
                                 fontSize: 20 * ffem,
                                 fontWeight: FontWeight.w600,
                                 height: 1.2125 * ffem / fem,
-                                color: Color(0xff000000),
+                                color: Color.fromARGB(255, 147, 146, 146),
                                 decoration: TextDecoration.none,
                               ),
                             ),
@@ -336,7 +364,7 @@ class AlertPage extends StatelessWidget {
                 Container(
                   // autogroup4mjwmc3 (RwJpwZX594uh3mo3Jm4mJw)
                   margin:
-                      EdgeInsets.fromLTRB(3 * fem, 0 * fem, 0 * fem, 10 * fem),
+                      EdgeInsets.fromLTRB(1 * fem, 0 * fem, 0 * fem, 10 * fem),
                   width: 516 * fem,
                   height: 84 * fem,
                   child: Stack(
@@ -352,7 +380,22 @@ class AlertPage extends StatelessWidget {
                             child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10 * fem),
-                                color: Color(0xffd9d9d9),
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset: Offset(
+                                        0, 3), // changes position of shadow
+                                  ),
+                                ],
+                                border: Border.all(
+                                  color: Colors
+                                      .black, // You can specify the color you want for the border
+                                  width:
+                                      3, // You can specify the width of the border
+                                ),
                               ),
                             ),
                           ),
@@ -393,7 +436,7 @@ class AlertPage extends StatelessWidget {
                                 fontSize: 17 * ffem,
                                 fontWeight: FontWeight.w600,
                                 height: 1.2125 * ffem / fem,
-                                color: Color(0xff000000),
+                                color: Color.fromARGB(255, 147, 146, 146),
                                 decoration: TextDecoration.none,
                               ),
                             ),
@@ -422,7 +465,7 @@ class AlertPage extends StatelessWidget {
                 Container(
                   // autogroupu5qr1HR (RwJq598mxptp3LpEKGu5qR)
                   margin:
-                      EdgeInsets.fromLTRB(3 * fem, 0 * fem, 5 * fem, 20 * fem),
+                      EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 20 * fem),
                   width: double.infinity,
                   height: 84 * fem,
                   child: Stack(
@@ -438,7 +481,22 @@ class AlertPage extends StatelessWidget {
                             child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10 * fem),
-                                color: Color(0xffd9d9d9),
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset: Offset(
+                                        0, 3), // changes position of shadow
+                                  ),
+                                ],
+                                border: Border.all(
+                                  color: Colors
+                                      .black, // You can specify the color you want for the border
+                                  width:
+                                      3, // You can specify the width of the border
+                                ),
                               ),
                             ),
                           ),
@@ -479,7 +537,7 @@ class AlertPage extends StatelessWidget {
                                 fontSize: 20 * ffem,
                                 fontWeight: FontWeight.w600,
                                 height: 1.2125 * ffem / fem,
-                                color: Color(0xff000000),
+                                color: Color.fromARGB(255, 147, 146, 146),
                                 decoration: TextDecoration.none,
                               ),
                             ),
@@ -508,7 +566,7 @@ class AlertPage extends StatelessWidget {
                 Container(
                   // autogroupecqmtP9 (RwJqBJdAxnRKwtmNdYEcqM)
                   margin: EdgeInsets.fromLTRB(
-                      4 * fem, 0 * fem, 0 * fem, 330.03 * fem),
+                      0 * fem, 0 * fem, 0 * fem, 330.03 * fem),
                   width: 378 * fem,
                   height: 84 * fem,
                   child: Stack(
@@ -524,7 +582,22 @@ class AlertPage extends StatelessWidget {
                             child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10 * fem),
-                                color: Color(0xffd9d9d9),
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset: Offset(
+                                        0, 3), // changes position of shadow
+                                  ),
+                                ],
+                                border: Border.all(
+                                  color: Colors
+                                      .black, // You can specify the color you want for the border
+                                  width:
+                                      3, // You can specify the width of the border
+                                ),
                               ),
                             ),
                           ),
@@ -565,7 +638,7 @@ class AlertPage extends StatelessWidget {
                                 fontSize: 20 * ffem,
                                 fontWeight: FontWeight.w600,
                                 height: 1.2125 * ffem / fem,
-                                color: Color(0xff000000),
+                                color: Color.fromARGB(255, 147, 146, 146),
                                 decoration: TextDecoration.none,
                               ),
                             ),

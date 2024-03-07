@@ -5,7 +5,6 @@ import 'transaction.dart';
 import 'login.dart';
 import 'budget.dart';
 
-
 void _navigateToTransactionPage(BuildContext context) {
   Navigator.push(
     context,
@@ -127,7 +126,16 @@ class Homepage extends StatelessWidget {
                                   decoration: BoxDecoration(
                                     borderRadius:
                                         BorderRadius.circular(20 * fem),
-                                    color: Color(0xffd9d9d9),
+                                    color: Color.fromARGB(255, 255, 255, 255),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.5),
+                                        spreadRadius: 5,
+                                        blurRadius: 7,
+                                        offset: Offset(
+                                            0, 3), // changes position of shadow
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ),
@@ -279,7 +287,16 @@ class Homepage extends StatelessWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20 * fem),
-                                  color: Color(0xffd9d9d9),
+                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -576,7 +593,16 @@ class Homepage extends StatelessWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20 * fem),
-                                  color: Color(0xffbababa),
+                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
